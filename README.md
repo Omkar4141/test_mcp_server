@@ -109,4 +109,34 @@ uv run client.py
 * Same client can be used for both local and remote servers by changing configuration
 
 
+## Remote MCP Server Deployment (FastMCP Cloud)
+
+### GitHub Access
+
+* GitHub repository access was granted to **FastMCP Cloud**
+* FastMCP Cloud pulls the source code directly from the repository
+
+### Deployment Steps
+
+1. Created MCP tools for the remote server
+2. Connected the GitHub repository to **FastMCP Cloud**
+3. FastMCP Cloud executed the server using:
+
+```text
+main.py
+```
+
+4. The server was successfully deployed as a **remote MCP server**
+
+### Client Configuration
+
+* Updated the MCP configuration file to point to the remote FastMCP Cloud endpoint
+* Reused the same `client.py` for both local and remote execution
+
+### Running the Client
+
+```bash
+uv run client.py
+```
+
 
