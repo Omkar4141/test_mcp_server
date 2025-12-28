@@ -21,12 +21,12 @@ SERVERS = {
             "run",
             "fastmcp",
             "run",
-            "/Users/nitish/Desktop/mcp-math-server/main.py"
+            "local_main.py"# full path must be added 
        ]
     },
     "expense": {
         "transport": "streamable_http",  # if this fails, try "sse"
-        "url": "https://splendid-gold-dingo.fastmcp.app/mcp"
+        "url": "https://OmkarLokhande.fastmcp.app/mcp"
     }
 }
 
