@@ -51,11 +51,11 @@ async def main():
         selected_tool_args = tc.get("args") or {}
         selected_tool_id = tc["id"]
 
-        print("Tool Called{selected_tool}")
-        print("Arguments : {json.dumps(selected_tool_args, indent=2)}")
+        print(f"Tool Called{selected_tool}")
+        print(f"Arguments : {json.dumps(selected_tool_args, indent=2)}")
 
         result = await named_tools[selected_tool].ainvoke(selected_tool_args)
-        print("Result {json.dumps(result, indent=2)}")
+        print(f"Result {json.dumps(result, indent=2)}")
         tool_messages.append(ToolMessage(tool_call_id=selected_tool_id, content=json.dumps(result)))
         
 
