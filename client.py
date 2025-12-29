@@ -4,7 +4,6 @@ from langchain_ollama import ChatOllama
 from langchain_core.messages import ToolMessage
 import json
 
-load_dotenv()
 
 SERVERS = { 
     "math": {
