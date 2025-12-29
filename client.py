@@ -40,7 +40,7 @@ async def main():
     llm_with_tools = llm.bind_tools(tools)
 
     prompt = "can u add 3 and 2" # can u rooll a dice twice or can u add my expense 500 to groceries
-    response = await llm_with_tools.ainvoke(prompt)
+    response = await llm_with_tools.ainvoke(prompt) # in this in first call we are getting tool to use with its args and all then we are getting the response in second call
 
     if not getattr(response, "tool_calls", None):
         print("\nLLM Reply:", response.content)
