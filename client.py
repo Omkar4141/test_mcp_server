@@ -35,7 +35,7 @@ async def main():
 
     print("Available tools:", named_tools.keys())
 
-    llm = ChatOllama(model="gpt-5")
+    llm = ChatOllama(model="llama3.2:3b")
     llm_with_tools = llm.bind_tools(tools)
 
     prompt = "can u add 3 and 2" # can u rooll a dice twice or can u add my expense 500 to groceries
